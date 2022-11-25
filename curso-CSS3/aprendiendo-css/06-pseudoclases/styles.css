@@ -1,0 +1,57 @@
+*{
+    background-color: aliceblue;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+ul li{
+    font-size: 20px;
+    color: blue;
+}
+
+ul li:first-child{
+    color: brown;   
+    font-weight: bold;
+}
+
+ul li:nth-child(2){
+    color:aquamarine;
+}
+
+ul li:last-child{
+    color:orange;
+}
+
+#mi-enlace{
+    font-size: 25px;
+    color:blueviolet
+}
+
+#mi-enlace:link{ /*Para cuando todavia no hemos visitado el enlace.*/
+    color:red;
+}
+
+#mi-enlace:visited{ /*Para cuando ya hemos visitado el enlace*/
+    color:rgb(9, 163, 60);
+}
+
+/*Los siguientes enlaces valen para cualquier elemento*/
+#mi-enlace:hover{ /*Cuando paso por encima el cursor, vale para cualquier 
+    elemento*/
+    color:blue;
+}
+
+#mi-enlace:active{ /*Para cuando clickamos el elemento*/
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(245, 8, 205);
+    font-size: 25px;
+}
+
+input[type="text"]{
+    margin-top: 15px;
+    padding: 10px;
+}
+
+input[type="text"]:focus{ /*Cuando estas o clicas en el elemento ocurrirá 
+    lo que declares*/
+    border:5px dashed red;
+}

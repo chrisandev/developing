@@ -1,0 +1,63 @@
+#boton{
+    display: block;
+    padding: 15px;
+    width:200px;
+    height: 70px;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(2, 44, 30);
+    background-color: aquamarine;
+    border: 3px solid rgb(5, 129, 88);
+    text-decoration: none;
+    text-align: center;
+    line-height: 30px;
+    font-weight: bold;
+
+    transition: all 3s;
+    /*all 500ms, border 3s, background 5s */
+}
+
+#boton:hover{
+    border-radius: 15px;
+    background-color: blanchedalmond;
+    color: brown;
+    border:5px solid red;
+}
+
+#caja{
+    margin-top: 25px;
+    width:250px;
+    height: 250px;
+    background-color: rgb(6, 179, 29);
+    color: white;
+    border: 5px solid black;
+    text-align: center;
+    line-height: 200px;
+    font-size: 20px;
+    animation-name: desplazamiento;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; /*Tiene miles!*/
+}
+
+@keyframes desplazamiento{
+    0%{
+        margin-left: 0px;
+        transform: rotate(0deg); /*deg es grados*/
+    }
+    50%{
+        margin-left: 1200px; /*En la mitad  llegará aqui*/
+        transform: rotate(360deg);
+        border-radius: 999px;
+    }
+    75%{
+        background: red;
+    }
+    77%{
+        border: 10px dashed blue;
+    }
+    100%{
+        margin-left: 0px;
+        transform: rotate(0deg);
+    }
+}

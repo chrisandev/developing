@@ -1,0 +1,24 @@
+body{ /*El body es toda la pagina, todo el contenedor visible*/
+background-color: azure;
+background-image: url(img/fondo1.jpg);
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-position: left bottom;
+}
+#caja{
+    border: 5px solid black;
+    padding: 10px;
+    color: white;
+    background-image: url("img/patron1.jpg");
+    font-size: 25px;
+    text-transform: uppercase;
+    }
+h2{
+    color: rgb(15, 13, 44);
+    background-image: url(img/patron4.jpg);
+    padding: 5px;
+    border: 5px, solid, black;
+}
+p{
+    color: white;
+}

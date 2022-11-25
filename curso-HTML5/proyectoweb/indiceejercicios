@@ -1,0 +1,17 @@
+Proyecto:
+1. Crear un index.html con la estructura basica.
+2. La web debe tener un favicon
+3. La web tendrá un encabezado con el nombre de la web, un menu, contenido
+principal con articulos y un pie de pagina.
+4. Cada articulo tendrá, un titulo, una fecha y una pequeña descripcion.
+5. En la descripcion debe haber palabras en negrita y otras en cursiva.
+6. El menu será una lista desordenada con enlaces vacios
+7. Cada articulo tendrá una imagen de 120px.
+8. Crear una pagina nueva llamada multimedia y enlazarla en el menu
+9. Ahi cargar un video nativo, un audio nativo y un video de youtube.
+10. En el pie de pagina de la pagina principal poner un ancla arriba.
+11. Crear una pagina con una tabla que se llame dieta.
+12. La dieta debe ir de lunes a viernes y contar con 5 comidas diarias.
+13. Crear una pagina de contacto
+14. Crear un formulario con campo nombre, apellidos, email, edad, genero y 
+motivo de contacto.

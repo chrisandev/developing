@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang='es'>
+<head>
+	<meta charset='utf-8' title='Ejercicio DOM, Eventos, Funciones'>
+	<script type="text/javascript" src='js/32-ejercicio-dom-th2.js'></script>
+</head>
+<style>
+	.box{
+		border: 2px solid black;
+		width: 200px;
+		padding: 5px;
+		float: left;
+	}
+	.dashed{
+		border: 3px dashed green;
+		height: 250px;
+		margin-left: 15px;
+		padding: 10px;
+	}
+	.error{
+		color: red;
+
+	}
+	</style>
+<body>
+	<h1 id='cabecera'>Ejercicio DOM, Eventos, Funciones</h1>
+
+	<div class= 'box'>
+		<form action='' method='POST' id='formulario' onsubmit="return false;">
+
+			<p>
+			<label for='nombre'>Nombre</label>
+			<input type='text' name='nombre' id='nombre'>
+			<hr>
+			<span class= 'error nombre'></span>
+			</p>
+
+			<p>
+			<label for='apellidos'>Apellidos</label>
+			<input type='text' name='apellidos' id='apellidos'>	
+			<hr>
+			<span class= 'error apellidos'></span>
+			</p>
+
+			<p>
+			<label for='edad'>Edad</label>
+			<input type='text' name='edad' id='edad'>
+			<hr>
+			<span class= 'error edad'></span>
+			</p>
+
+			<p>
+				<input type='submit' value='Enviar' id='submit'>
+			</p>
+
+		</form>
+	</div>
+
+	<div class= 'box dashed'>
+		<h3>Datos del usuario</h3><hr>
+
+		<p id='p_nombre'>
+			Nombre:<span></span>
+		</p>
+
+			<p id='p_apellidos'>
+			Apellidos:<span></span>
+		</p>
+
+			<p id='p_edad'>
+			Edad:<span></span>
+		</p>
+	</div>
+
+
+</body>
+
+</html>

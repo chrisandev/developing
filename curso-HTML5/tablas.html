@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<meta charset="utf-8">
+<meta title="Mis tablas" meta conten="Aprendizaje tablas">
+<body>
+    <h1>Tablas</h1>
+    <table border="1" summary="Peliculas favoritas">
+        <caption>Mis pelis favoritas</caption>
+        <thead>
+            <tr> <!--Filas-->
+                <th>Titulo</th> <!--Columnas en el primer caso, luego son celdas-->
+                <th>Genero</th>
+                <th>Año</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Matrix</td>
+                <td>Ciencia Ficcion</td>
+                <td>1999</td>
+            </tr>
+            <tr>
+                <td>Joker</td>
+                <td colspan="2" rowspan="2">Drama</td> <!--colspan para ampliar
+                     las celdas, si le damos valor 2 ocupara 2, etc-->
+                     <!--rowspan para expandir las filas, si le damos valor 2
+                    ocupara 2 filas en vez de una-->
+            </tr>
+            <tr>
+                <td>Los Vengadores</td>
+            </tr>
+            <tr>
+                <td>Star Wars</td>
+                <td>Ciencia Ficcion</td>
+                <td>2001</td>
+            </tr>
+        </tbody>  
+        <tfoot>
+            <tr>
+                <td colspan="3">Curso de HTML5: Christian Sánchez</td>
+            </tr>
+        </tfoot> 
+    </table>
+</body>
+</html>

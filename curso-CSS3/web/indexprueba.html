@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" title="Mi primera web" />
+	</head>
+	<body>
+		<h1>Web HTML5</h1>
+		<h2>Bienvenido a mi web</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac lectus ornare, malesuada nunc id, ullamcorper erat. Fusce ullamcorper lectus augue, in mollis quam varius id. Ut consectetur felis mi, at hendrerit risus elementum sit amet. Curabitur laoreet porttitor justo, sed pellentesque ligula tincidunt sit amet. Ut feugiat faucibus sodales. Nam eleifend, eros sed suscipit tristique, augue risus consectetur tortor, et feugiat purus mauris in risus. Maecenas nec risus at neque maximus sollicitudin quis eu dolor. Aenean faucibus vitae lorem et fringilla. Donec laoreet ex non dolor luctus aliquet. Proin feugiat id lorem id egestas. Nulla ullamcorper tortor non tincidunt commodo. In hac habitasse platea dictumst. Proin et lacinia elit. Nam accumsan fermentum tellus eget posuere. </p>
+		<p>In fermentum, metus at eleifend tincidunt, risus quam blandit tellus, sed euismod massa ante quis urna. Aliquam vitae est metus. Curabitur ac nulla sapien. Aenean gravida augue imperdiet bibendum vestibulum. Maecenas placerat ultricies pharetra. Vestibulum vel ultricies metus. Pellentesque sollicitudin accumsan justo eget ultrices. <br/><br/>Maecenas aliquam, enim quis ultricies semper, dolor ante tincidunt lorem, nec finibus nulla ligula vel lectus. In tellus velit, pharetra at arcu at, gravida posuere diam. Aliquam erat volutpat. Nunc et mollis dui, nec volutpat metus. Sed pulvinar auctor velit. Phasellus in dui sem. Sed sed rhoncus sapien. Maecenas vitae rutrum massa. Morbi eu arcu ultricies, lacinia leo sit amet, viverra dui. </p>
+		<p>Nullam euismod ligula nec porta congue. Quisque in ornare eros. Maecenas rutrum eu leo vitae tempus. Aenean cursus enim a massa accumsan placerat. Sed suscipit pulvinar tellus eu tincidunt. Aliquam aliquam justo nunc, a tempor diam hendrerit ut. Vivamus aliquam risus nec lectus mattis, sed iaculis ligula fringilla. Pellentesque tincidunt <br/>felis et quam blandit mollis. Integer lobortis purus neque, et gravida enim vestibulum ac. Praesent finibus gravida lacinia. Nulla a tempus urna, sed mattis erat. Aliquam sagittis sagittis nisl eu egestas. Donec nisl nibh, maximus ac aliquam eu, euismod id quam. </p>	<hr/>
+		<h2>Tercer encabezado de la pagina</h2>
+		<p>In fermentum, metus at <strong>eleifend tincidunt, risus</strong> quam blandit tellus, sed euismod massa ante quis urna. Aliquam vitae est metus. Curabitur ac nulla sapien. Aenean gravida augue imperdiet bibendum vestibulum. Maecenas placerat ultricies pharetra. Vestibulum vel ultricies metus. Pellentesque sollicitudin accumsan justo eget ultrices. Maecenas aliquam, enim quis ultricies semper, dolor ante tincidunt lorem, nec finibus nulla ligula vel lectus. In tellus velit, <span id="resaltado" class="rojo amarillo">pharetra at arcu at,</span>  gravida posuere diam. Aliquam erat volutpat. <em>Nunc et mollis dui,</em> nec volutpat metus. Sed pulvinar auctor velit. <i>Phasellus in dui sem.</i> 
+			<blockquote>Sed sed rhoncus sapien. Maecenas vitae rutrum massa. Morbi eu arcu ultricies, lacinia leo sit amet, viverra dui.</blockquote></p>
+			<h2>Imagenes en HTML5</h2>
+			<img alt="Tu navegador no carga esta imagen" title="Imagen de un perrete" src="images/perrete.jpg" width="300px">
+			<hr/>
+			<hr/>
+			<h3>Listado de Frutas</h3>
+			<ol>
+				<li>Manzana</li>
+				<li>Pera</li>
+				<li>Melon</li>
+				<li>Naranja</li>
+			</ol>
+			<h3>Listado desordenado de objetos</h3>
+			<ul>
+				<li>Lapiz</li>
+				<ul>
+					<li>Punta gorda</li>
+					<li>Portaminas</li>
+					<li>Punta fina</li>
+				</ul>
+				<li>teclado</li>
+				<ul>
+					<li>Mecanico</li>
+					<li>normal</li>
+					<li>Gaming</li>
+				</ul>
+				<li>boligrafo</li>
+				<li>altavoces</li>	
+			</ul>
+			<br/>
+			<h2>Tablas en HTML</h2>
+			<table border="1">
+				<tr>
+					<th>Nombre</th>
+					<th>Apellido</th>
+					<th>Pais</th>
+				</tr>
+				<tr>
+					<td>Christian</td>
+					<td>Sanchez</td>
+					<td>España</td>
+				</tr>
+				<tr>
+					<td>Arturo</td>
+					<td colspan="2">Gonzalez</td>
+					<td>Portugal</td>
+				</tr>
+			</table>
+			<hr/>
+			<h2>Formularios en HTML5</h2>
+			<form border="1px">
+				<div>
+				<label for="nombre">Nombre</label>
+				<input type="text" id="nombre" />
+				</div><br/>
+				<div>
+					<label for=areatexto>Area de texto</label>
+					<textarea id="areatexto"></textarea>
+				</div><br/>
+				<div>
+					Genero:<br/>
+					<input type="radio" id="genero" value="hombre">Hombre <br/>
+					<input type="radio" id="genero" value="mujer">Mujer <br/>
+					<input type="radio" id="genero" value="nada">Nada <br/>
+				</div>
+				<br/>
+				<div>
+					Opcion:
+					<select name="generados">
+						<option value="hombre">Hombre<br/>
+						<option value="mujer">Mujer<br/>
+						<option valie="nada">Nada<br/>
+					</select>
+				</div>
+				<br/>
+				<div>
+					<input type="submit" value="Enviar formulario" />
+				</div>
+			</form>
+		</body>	
+</html>

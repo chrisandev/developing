@@ -1,0 +1,33 @@
+<h2>Contacto</h2>
+
+<form #formContacto='ngForm' (ngSubmit)="onSubmit()"> <!--directiva evento submit para Angular-->
+
+	<label for='nombre'>Nombre</label> <br>
+	<input type='text' name='nombre' #nombre='ngModel' [(ngModel)]='usuario.nombre' required pattern="[a-zA-Z]+"/>
+	<span *ngIf="nombre.touched && !nombre.valid"> El nombre es obligatorio</span>
+	 <br/>
+
+	<!--Vemos como ponemos # seguido de un nombre como atributo, esto declara una variable
+		para angular y luego al indicar ngModel estamos diciendo que es un input de un formulario en angular, esto será util para hacer las validaciones pero de momento no tiene ningun uso.
+		El uso de  la asignacion  de variables o nombres de angular como #formContacto='ngForm' es empleado para luego asociar elementos html en el uso con otras directivas o funciones de angular en estas plantillas, por ejemplo como en la directiva [disabled] del boton submit, osease, son variables pero solo para este ambito de template y solo para utilidades de directivas o cosas de angular-->
+
+	<label for='apellidos'>Apellidos</label> <br>
+	<input type='text' name='apellidos' #apellidos='ngModel' [(ngModel)]='usuario.apellidos'
+	required pattern='[a-zA-Z]+'>
+	<span *ngIf='apellidos.touched && !apellidos.valid'> Los apellidos son obligatorios
+	</span>
+	 <br>
+
+	<label for='email'>Email</label> <br>
+	<input type='email' name='email' #email='ngModel' [(ngModel)]='usuario.email' required>
+	<span *ngIf='email.touched && !email.valid'> El email no es valido</span> <br>
+
+	<label for='mensaje'>Mensaje</label> <br>
+	<textarea name='mensaje' #mensaje='ngModel' [(ngModel)]='usuario.mensaje' required pattern='[a-zA-Z]+'></textarea>
+	<span *ngIf='mensaje.touched && !mensaje.valid'>El mensaje no es valido</span>
+	<br>
+
+	<input type='submit' value='Enviar' [disabled]="!formContacto.form.valid">
+	<!--La directiva disabled tiene como condicion el, si la variable formContacto. seguido de su form no es valido, es decir si la validacion de algunos de los campos no es correcta entonces el boton estara disabled (invisible  e intocable)-->
+
+</form>

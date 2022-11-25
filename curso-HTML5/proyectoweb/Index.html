@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta title="Proyecto web" />  
+        <link rel="icon" type="image/png" href="images/favicon.png" />
+    </head>
+ <body>
+     <header>
+        <h1>Proyecto web html</h1>
+        <nav>
+            <!--menú, tambien se podria meter fuera del header-->
+            <ul>
+                <li>
+                    <a href="Index.html">Index</a> <!--Almohadilla se usa para dejar vacio
+                    un apartado, tambien podriamos dejarlo con las comillas y ya-->
+                </li>
+                <li>
+                    <a href="multimedia.html">Multimedia </a>
+                </li>
+                <li>
+                    <a href="dieta.html">Dieta<a>
+                </li>
+                <li>
+                    <a href="contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+     </header>
+     <main>
+         <h2>Articulos</h2>
+        <section id="articulos" >
+            <article style="border-bottom: 1px solid gray;
+            margin-bottom:10px;">
+            <h3>Titulo de articulo</h3>
+            <time datetime="2022-01-01">1 de Enero</time>
+            <p>
+                <b>Descripcion</b> de <i>este</i> <b>articulo</b> de la <i>web</i>
+            </p>
+            <img src="images/favicon.png" width="120px" title="Imagen del articulo" >
+            <hr/>
+            </article>
+            <article style="border-bottom: 1px solid gray; margin-bottom:10px;">
+                <h3>Titulo de articulo</h3>
+                <time datetime="2022-01-01">1 de Enero</time>
+                <p>
+                    <b>Descripcion</b> de <em>este</em> <strong>articulo
+
+                    </strong> de la <i>web</i>
+                </p>
+                <img src="images/favicon.png" width="120px" 
+                title="Imagen del articulo" />
+                <hr/>
+                </article>
+                <article style="border-bottom: 1px solid gray; margin-bottom:10px;">
+                    <h3>Titulo de articulo</h3>
+                    <time datetime="2022-01-01">1 de Enero</time>
+                    <p>
+                        <strong>Descripcion</strong> de <em>este</em> 
+                        <b>articulo</b> de la <i>web</i>
+                    </p>
+                    <img src="images/favicon.png" width="120px" title="Imagen del articulo" />
+                    <hr/>
+                    </article>
+        </section>
+        <video src="videos/Header_Video.mp4" controls autoplay muted width="350px"
+        poster="images/niagara_falls.jpg">Tu navegador no reconoce este video
+    </video>
+        <video src="videos/Header_Video.mp4" controls width="350px"
+        poster="images/niagara_falls.jpg" >Tu navegador no reconoce este video
+    </video>
+        <hr>
+        <br>
+        <audio src="audio/Dream_on.mp3" controls >Tu navegador no reconoce 
+            este fichero de audio</audio>
+            <hr>
+            <br>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/B48EOukOVSI"
+             title="YouTube video player" frameborder="0" 
+             allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+             gyroscope; picture-in-picture" allowfullscreen></iframe>
+             <hr>
+             <br>
+     </main>
+     <footer>Proyecto de HTML con ejercicios de Chistian Sánchez &copy; <a href="#top" >Ir arriba</a> </footer>
+ </body>
+</html>

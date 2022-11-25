@@ -1,0 +1,61 @@
+//VARIABLES 
+//Se declaran anteponiendo una @, seguido del nombre que queramos y :
+@bgcolor: lightblue; //lightblue guardado en la variable bgcolor
+@fuente: Arial;
+@b: body;
+
+@{b}{ /*En este caso, ya que es el body y le vamos a dar estilos, la variable 
+    se usa poniendo el nombre entre {} despues de la arroba*/
+background: @bgcolor;
+}
+h1{
+    font-family: @fuente;
+}
+
+//ANIDACION
+.informacion{
+    ul{
+        a{
+            color:green;
+            font-size: 18px;
+        }
+    }
+}
+
+//MIXINS O FUNCIONES
+//Se declaran poniendo un punto delante del nombre ej, .sombras(){}
+.sombras(@size){
+    box-shadow: 0px 0px @size black;
+    text-shadow: 0px 0px @size gray;
+}
+
+//Ahora vamos a aplicar el mixin a la clase informacion
+.informacion{
+    .sombras(5px);
+}
+
+//OPERADORES
+h1{
+    font-size: 30px + 7px;
+}
+
+//MIXINS CONDICIONALES
+.textoNegro (@value) when (@value=true){
+    color: black;
+}
+
+h1{
+    color: blue;
+    .textoNegro(true);
+}
+
+///BUCLES
+.loop(@cont) when (@cont > 0){ //Cuando llegue a 0 parará
+    .loop((@cont - 1));//En cada iteración restará 1 al contador
+    height: ((900px/@cont)); //Lo que hará en si
+}
+
+.informacion{
+    height: 900px;
+    .loop(5); //Asi lo aplicamos, se ejecutará 5 veces el bucle
+}

@@ -1,0 +1,52 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+
+body{
+    padding:20px;
+}
+
+
+.caja{
+display: block; /*A las cajas solo se les puede aplicar float si es block*/
+width: 250px; /*Anchura*/
+height:250px; /*Anchura*/
+background-color: lightskyblue;
+margin: 15px 15px 15px 15px;
+margin-top: 15px;
+margin-bottom: 15px;
+margin-left: 15px;
+margin-right: 15px;
+padding: 15px;
+padding-top: 15px;
+padding-bottom: 15px;
+padding-left: 15px;
+padding-right: 15px;
+border: 5px dashed black;
+/*min-width: ; lo veremos mas adelante pero sirve para establecer cual puede ser
+el máximo o el minimo de ancho de un elemento
+max-width: ;*/
+float: left;
+}
+
+#cajas{
+    max-width: 1035px;
+    border: 1px solid black;
+}
+
+.caja p{
+font-weight: bold;
+text-align: center;
+font-size: 15px;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+line-height: 235px;
+}
+
+.clearfix{
+    float:none;
+    clear:both; /*Esta propiedad significa, limpiame los flotados de arriba, 
+   (todos) tanto los de la izquierda, como los de la derecha. Es decir, 
+   limpiara todo lo que este debajo de esta propiedad, las cajas de arriba 
+   en el html no podrá hacerlo. Tambien puede ser clear: left y right*/
+}

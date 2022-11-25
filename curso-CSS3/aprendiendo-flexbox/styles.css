@@ -1,0 +1,122 @@
+body{
+    --rojo: red; /*VARIABLES, pertenecen a CSS, se declaran con -- seguido
+    del nombre y :, luego la inicializamos con el valor que queramos
+    Es una funcion un poco experimental en los preprocesares  se usan mas facil
+    y  escribiendo menos codigo*/
+
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+#layout{
+    display: flex; /*Es como hacer un float left para todos los elementos
+    internos y además, despues aplicar un clearfix debajo, este elemento de 
+    flexbox o este atributo, solo se aplica a este contenido donde lo indicamos,
+    tambien le da un width del 100% auto*/
+
+    /*display: inline-flex; Con este atributo la caja se adaptaria al contenido 
+    que hay dentro ajustandose y despues se centraria, tras ello tambien aplica
+    un clear both*/
+
+    /*flex-direction: row; Por defecto la direccion esta en row, que es en
+    fila, uno al lado del otro, column seria en columna, uno debajo del otro
+    ocupando el 100% del ancho de la caja que los contiene, luego estan las 
+    mismas propiedades pero en reverse, que invierte eu orden y su lado en el 
+    caso de row, y por ultimo tendriamos el valor unset, que establece el valor
+    a por defecto*/
+
+    /*flex-wrap: nowrap; Define como actua el envoltorio o wrap, por defecto, si 
+    añadimos demasiados contenedores por ejemplo en linea, el wrap no sobrepasara 
+    el 100% de la pantalla, entonces los elementos seguiran su linea saliendose
+    del wrap y se generará un scroll horizontal en la web para verlo todo, sin
+    flexbox usando los float, los contenedores si no cogian se iban estableciendo
+    debajo los unos de los otros.
+    la propiedad nowrap es el valor por defecto, y la propiedad wrap hará que 
+    el envoltorio envuelva perfectamente los elementos y actuan como los float*/
+
+    flex-flow: row wrap; /*Esta propiedad unifica las propiedades flex-direction
+    y flex-wrap. */
+
+    justify-content: space-evenly; /*Justificación de los elementos, tiene distintas
+    justify-content: flex-start; /*Justificación de los elementos, tiene distintas
+    opciones, flex start los alinea hacia en inicio de la caja que los contiene,
+    empezando por la derecha, flex-end lo contrario, y luego tenemos los 
+    space arround, between etc, esto declara que habra un espaciado entre los 
+    elementos pero con distinto tamaño o justificación, es ir probando*/
+
+    height: 600px; /*en vez de px tambien podemos poner vh (vertical height
+    o viewport height) en este caso no funciona por que tenemos mas contenido*/
+    /* align-items: center; Propiedad para alinear los items de manera vertical
+    dispone de diversas opciones*/
+
+    align-items: flex-start; /*De esta forma además  de alinearlos,  se ajustará
+    su altura al tamaño de las cajas*/
+
+    border: 3px solid black;
+    padding: 5px;
+}
+
+.caja{
+    /* flex-basis: calc((100% / 3) - 68px); */
+    /*- Flex-basis: es la manera de asignar el width en flexbox, de este modo se
+    asigna un ancho base ajustable y responsive a los elementos
+    - Funcion calc(): De este modo podemos asignar calculos de sumas, porcentajes,
+    etc, es una función de CSS realmente*/
+    /*height: 120px; */
+    flex-grow: 1;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    border: 4px solid #222;
+    margin: 10px;
+    background-color: gray;
+}
+
+.red{
+    /*
+    order: -1; Ordena los elementos sin necesidad de modificar nuestro HTML
+    si solo ponemos un order en un elemento, cuanto más numero en negativo le demos
+    más se acercará al lado izquierdo, si por lo tanto todos tienen un orden
+    el que tenga el numero menor será el posicionado mas a la izquierda y el de
+    mayor numero más a la derecha.
+    */
+
+    /* flex-grow: 0; Propiedad flex grow, determina cuanto va a crecer el elemento
+    al que se lo apliquemos, pero siempre compartiendo el espacio con el resto de 
+    elementos sin llegar a desvirtuarlos por debajo del minimo, por ejemplo, en
+    este caso si todos tienen el 1, puedes todos ocuparan lo mismo expandiendose
+    al maximo en su layour o contenedor, si uno tiene 4 y el resto uno, pues se 
+    verá más grande pero tampoco desorbitado en respecto a los otros, y aunque
+    le pusieramos 999 a uno, el resto se seguirian viendo aunque mas pequeños*/
+
+    /* flex-shrink: 999; Propiedad opuesta a flex grow*/
+    background-color: var(--rojo); /*Usamos la variable declarada en body*/
+    align-self: flex-start; /*Propiedad para alinear un solo elemento, no como
+    align-items que seria una regla mas general*/
+}
+
+.green{
+    /*flex-grow: 1; */
+    margin-top: 10%;
+    background-color: green;
+
+}
+
+.blue{
+    /* flex-grow: 3; */
+    background-color: blue;
+    align-self: center;
+
+}
+
+.orange{
+   /* flex-grow: 8; */
+    background-color: orange;
+    /*flex-basis: 100%; A esta le asignamos un 100% por que se quedaria debajo 
+    sola en una linea, y asi la ocupa entera*/
+    align-self: flex-end;
+
+}
+

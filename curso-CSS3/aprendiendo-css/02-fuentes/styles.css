@@ -1,0 +1,48 @@
+@font-face{
+    font-family: MonserratFuenteCustom;
+    src: url(fonts/Montserrat/static/Montserrat-Regular.ttf);
+}
+
+body{
+    background: yellowgreen;
+}
+h1{ 
+    /*font-family: Arial, Helvetica, sans-serif; */
+    /*Si no puede aplicarse la primera por no estar en mi sistema, se aplicará
+    la segunda.*/
+    font-family: 'Mansalva', cursive;
+    font-size: 45px; 
+    text-transform: uppercase;
+    font-weight: 400;
+    font-style: italic;
+
+/*Colores*/
+
+/*Colores del sistema o css*/
+color: antiquewhite;
+
+/*Colores héxadecimales*/
+color: #810e0e;
+
+/*Colores RGB*/
+color: rgb(red, green, blue)
+
+/*Colores RGBA*/
+color rgba(204, 25, 156, 0.705);
+
+}
+h3{
+    font-family: MonserratFuenteCustom, "Comic Sans MS"; /*Esta no sale por default ni como 
+    recomendada pero si conocemos el nombre podemos ponerla sin problema el MS es por 
+    Microsoft, habra que añadir las que no estan entre comillas "", con las que 
+    se recomiendan ya no hacen falta comillas*/
+    font-size: 35px; /*se usan em, px y % (1 em equivale a 16px*/
+    font-weight: lighter;
+    font-style: oblique;
+}
+p{
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    font-style: normal;
+}

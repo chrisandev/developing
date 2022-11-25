@@ -1,0 +1,100 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.clearfix{ /*Para reasignar tamaños, borrar flotados, 
+    es como reiniciar el pc*/ 
+    float: none;
+    clear: both;
+}
+
+#container{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 70%;
+    background-color: beige;
+    margin: 0px auto; /*Para centrar*/
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    width: 100%;
+    height: 150px;
+    line-height:150px;
+    background-color: lightcyan ;
+    color: #333;
+    text-align: center;
+}
+
+aside{
+    width: 25%; /*Responsive es trabajar con porcentajes para que siempre se 
+    adapte a los tamalos de las distintas pantallas.*/
+    background: #ccc;
+    float: left;
+    min-height: 700px;
+    text-align: center;
+    line-height: 700px;
+}
+
+#articles{
+    width: 75%;
+    min-height: 700px; /*La altura no debe ir en %, debe ser un tamaño fijo*/
+    float:left;
+    background-color: lemonchiffon;
+}
+
+#articles article{
+    width: 25%;
+    height: 150px;
+    background-color: green;
+    line-height: 150px;
+    text-align: center;
+    border: 2px solid white;
+    float: left;
+    margin: 15px;
+}
+
+/*RESPONSIVE CON MEDIA QUERIES*/
+
+@media (max-width: 888px){ /*Desde la anchura 0, hasta la 888 se aplicarán 
+    estos estilos en vez de los generales, a partir del 889 se ejecuratan
+    los restantes*/
+
+    #articles article{
+        width: 40%;
+        background-color: red;
+    }
+}
+
+@media (max-width: 632px) and (max-height:600px){
+    /*Se ejecutaran estos estilos*/
+
+    #container{
+        overflow: hidden;
+    }
+
+    aside{
+        float:none;
+        min-height: auto;
+        line-height: 20px;
+        width: 91%;
+        padding:19px;
+    }
+
+    #articles{
+        width: 100%;
+    }
+
+    #articles article{
+        width:90%;
+        background-color: blue;
+    }
+}
+
+@media (max-width: 554px ){
+    body{
+        background-color: lightsalmon;
+    }
+}
+

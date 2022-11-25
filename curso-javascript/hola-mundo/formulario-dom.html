@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html lang="es">
+<head>
+	<meta charset="UTF-8" />
+	<title>EJERCICIO DOM, Eventos y funciones </title>
+	<script type="text/javascript" src="js/32-ejercicio-dom.js"></script>
+
+	<style> /*Le damos estilos a las box desde el HTML*/
+		.box{
+			width: 200px;
+			height: 250px;
+			float:  left;
+			margin:  20px;
+		}
+		.dashed{
+			border:  3px dashed black;
+			padding: 5px;
+		}
+	</style>
+</head>
+<body>
+	<!--
+		1. Formulario campos: Nombre, Apellidos y edad
+		2. Boton de enviar el formulario: eventos submit
+		3. Mostrar datos por pantalla
+		4. Tener un boton que al darle click nos muestra los datos actuales del formulario
+	-->
+
+	<h1>Ejercicio DOM, Eventos y funciones - Curso JS victorrobles.web.es</h1>
+
+	<div class= 'box'>
+
+		<form action="#" method="POST" id="formulario" onsubmit="return false;"> <!--Datos usables en el Backend, el onsubmit return false, es para que al darle y ejecutar el evento que hemos creado del submit, no redireccione y actualice la pagina, El evento submit nos lleva o nos carga la direccion que tengamos configurada, es su funcion-->
+
+			<label for="nombre">Nombre:</label>
+			<input type="text" name="nombre" id="nombre" /> </br> </br>
+
+			<label for="apellidos">Apellidos:</label>
+			<input type="text" name="apellidos" id="apellidos" /> </br> </br>
+
+			<label for="edad">Edad:</label>
+			<input type="number" name="edad" id="edad" /></br> </br>	
+
+			<input type="submit" value="Enviar" id="submit" />
+
+		</form>
+	</div>
+
+	<div class= 'box dashed'>
+	<h3>Información del usuario</h3>
+	<hr>
+	<p id="p_nombre">
+		Nombre: <span></span>
+	</p>
+	<p id="p_apellidos">
+		Apellidos: <span></span>
+	</p>
+	<p id="p_edad">
+		Edad: <span></span>
+	</p>
+	</div>
+</body>
+</html>

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" content="Iniciacion
+        en formularios HTML5">
+        <title>Formularios HTML5</title>
+    </head>
+    <body>
+        <h1>VALIDACION</h1>
+        <form>
+            
+                Campo Validacion Texto:
+                <input type="text" required 
+                minlength="2" maxlength="20" 
+                pattern="[A-Za-z ]+" />
+            
+            <br>
+            
+                Campo Validacion Numeros:
+                <input type="number" required 
+                min="5" max="20"/>
+            
+            <input type="submit" value="Enviar" />
+        </form>
+
+
+        <h1>FORMULARIOS</h1>
+        <form>
+            <fieldset><!--Tambien podriamos usar la etiqueta <p>-->
+                <legend>Información personal</legend>
+                <div>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" name="textfieldname" id="nombre" 
+                    placeholder="Nombre.."/>
+                    <button type="submit">Enviar</button>
+                    <!--<input type="submit value="El nombre que quieras  
+                        que se vea/>-->
+                    </div>
+                    <br>
+                <div>
+                    <label for="Descripcion">Descripción</label>
+                    <textarea id="Descripcion"></textarea>
+                </div>
+                <br>
+                <div>
+                    Email:
+                    <input type="email"/>
+                </div>
+                <br>
+                <div>
+                    Contraseña:
+                    <input type="password"/>
+                </div>
+                <br>
+                <div>
+                    Radio button:
+                    <label for="hombre">Hombre:</label>
+                    <input type="radio" name="genero"id="hombre" value="hombre"/>
+                    <label for="mujer">Mujer:</label>
+                    <input type="radio" name="genero" id="mujer" value="mujer"/>
+                </div>
+                <br>
+                <div>
+                    Select:
+                    <select>
+                        <option value="hombre">Hombre</option>
+                        <option value="mujer">Mujer</option>
+                        <option value="otro">Otro</option>
+                        <!--Es importante que cada option tenga su value
+                        correspondiente  para que se identifique el dato que se
+                    manda-->
+                    </select>
+                </div>
+                <br>
+                <div>
+                    Checkbox:
+                    <label>
+                        <input type="checkbox"/> Mayor de edad
+                    </label>
+                    <label>
+                        <input type="checkbox"/> Menor de edad
+                    </label>
+                </div>
+                <br>
+                <div>
+                    Color:
+                    <input type="color"/>
+                </div>
+                <br>
+                <div>
+                    Fecha:
+                    <input type="date" name="fecha" value="fecha"/>
+                    <!--Siempre habra que poner un nombre y un value para 
+                    referenciar a los datos que seran enviados al server o URL-->
+                </div>
+                <br>
+                <div>
+                    Fichero:
+                    <input type="file" />
+                </div>
+                <br>
+                <div>
+                    Imagen:
+                    <input type="image" src="imagenes/perrete.jpg" width="150" />
+                </div>
+                <br>
+                <div>
+                    Campo oculto:
+                    <input type="hidden" name="oculto" value="Este texto 
+                    no es visible en el formulario" />
+                </div>
+                <br>
+                <div>
+                    Numero:
+                    <input type="number" />
+                </div>
+                <br>
+                <div>
+                    Rango:
+                    <input type="range" />
+                </div>
+                <br>
+                <div>
+                    Buscar:
+                    <imput type="search" name="buscar" />
+                    <button>Buscar</button> <!--nose por que no sale-->    
+                </div>
+                <br>
+                <div>
+                    Telefono:
+                    <input type="tel" name="telefono" />
+                </div>
+                <br>
+                <div>
+                    Hora:
+                    <input type="time" name="hora" />
+                </div>
+                <br>
+                <div>
+                    Mes:
+                    <input type="month" name="mes" />
+                </div>
+                <br>
+                <div>
+                    Sitio Web:
+                    <input type="url" name="url" />
+                </div>
+                <br>
+                <div>
+                    Barra progreso:
+                    <progress max="100" value="25"></progress> <!--min="1"-->
+                </div>
+                <br>
+                <div>
+                    Barra Meter:
+                    <meter max="100" value="25"></meter>
+                </div>
+                <br>
+                <div>
+                    Lista de datos:
+                    <input list="frutas" name="fruta" />
+                    <datalist id="frutas">
+                        <option value="sandia" />
+                        <option value="pera" />
+                        <option value="melon" />
+                        <option value="naranja" />
+                        <option value="pomelo" />
+                        <option value="kiwi" />
+                    </datalist>
+                </div>
+            </fieldset>   
+            <input type="submit" value="Enviar"/>
+            <input type="reset" value="Limpiar"/>  
+        </form>
+    </body>
+
+</html>

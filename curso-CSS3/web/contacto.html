@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang=es>
+<head>
+	<meta charset=UTF-8 title="contacto">
+</head>
+<body>
+	<header>
+		<h1>Contacto</h1>
+		<nav>
+			<ul>
+				<li><a href="index.html" />Ir al indice</li>
+				<li><a href="contenidos.html" />Ir a contenidos</li>
+			</ul>
+			<hr/>	
+		</nav>
+	</header>
+	<h2>Formulario</h2>
+	<main>
+		<section>
+			<form>
+				<div>
+				<label for="nombre">Nombre</label>
+				<input type="text" id="nombre" />
+				</div>
+				<div>
+				<label for="biografia">Biografia</label>
+				<textarea id="biografia"></textarea>	
+				</div>
+				<div>
+				<label for="genero">Genero:</label>
+				<input type="radio" id="genero" value="hombre">Hombre
+				<input type="radio" id="genero" value="mujer">Mujer
+				</div>
+				<div>
+					<label for="option">Opcion:
+					<select id="option">
+					<option value="hombre">Hombre</option>
+					<option value="mujer">Mujer</option>
+					<option value="otra">Otra</option>
+					</select>
+				</div>
+				<div>
+					<input type="submit" id="enviar" value="Enviar Formulario">
+				</div>
+			</form>	
+		</section>
+	</main>
+</body>
+</html>
